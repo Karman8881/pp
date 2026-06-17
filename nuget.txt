@@ -1,0 +1,8 @@
+Microsoft.EntityFrameworkCore
+Microsoft.EntityFrameworkCore.Design
+Microsoft.EntityFrameworkCore.SqlServer
+Microsoft.EntityFrameworkCore.Tools
+MySql.Data
+MySqlConnector
+Pomelo. EntityFrameworkCore.MySql
+System.Net.Http.Json
