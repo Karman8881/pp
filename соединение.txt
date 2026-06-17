@@ -1,0 +1,15 @@
+После создания проекта открываем NuGet (Проект > Управление пакетами NuGet)
+Скачиваем:
+1.	Microsoft.EntityFrameworkCore.Design версии 9.0.0
+2.	Microsoft.EntityFrameworkCore версии 9.0.0
+3.	Pomelo.EntityFrameworkCore.MySql версии 9.0.0
+4.	Microsoft.EntityFrameworkCore.Tools версии 9.0.0
+
+После скачивания билдим приложением (Сборка > Перестроить решение)
+
+В проекте добавляем папку Models (через обозреватель решений).
+
+Открываем терминал Visual Studio (Вид > Терминал)
+Пишем:
+1.	dotnet tool install --global dotnet-ef
+2.	dotnet ef dbContext scaffold "server=127.0.0.1;uid=root;pwd=Пароль;database=БазаДанных;AllowUserVariables=True;UseAffectedRows=False" Pomelo.EntityFrameworkCore.MySql -f -o Models
